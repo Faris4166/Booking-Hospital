@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400; /* ค่ามาตรฐาน: 100 ถึง 900 */
+    font-style: normal; /* หรือ italic */
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    color: #333; /* ตัวอย่างสีข้อความ */
+  }
+  
