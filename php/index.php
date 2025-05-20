@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ปฏิทินเรียบๆ 2 ฝั่ง</title>
+  <title>Medbook</title>
 
   <!-- ฟอนต์ Kanit จาก Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="font.css"
-
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -46,6 +44,17 @@
       font-size: 1.25rem;
       font-weight: 500;
     }
+
+    /* จัดตำแหน่งปุ่ม prev/next ไปทางขวา */
+    .fc-header-toolbar {
+      justify-content: space-between !important;
+    }
+    .fc .fc-button:focus,
+    .fc .fc-button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
   </style>
 </head>
 <body class="bg-gray-100 min-h-screen p-6 font-sans">
@@ -59,8 +68,9 @@
     <!-- ฝั่งขวา: ปุ่ม -->
     <div class="bg-white rounded-xl shadow p-4">
       <h2 class="text-xl font-semibold mb-4">การจอง</h2>
-      <div class="flex flex-wrap gap-2">
+      <div class="flex flex-wrap gap-2 justify-end w-full">
         <!-- ใส่ปุ่มหรือ UI อื่นๆ ที่นี่ -->
+
       </div>
     </div>
   </div>
@@ -74,9 +84,9 @@
         initialView: 'dayGridMonth',
         locale: 'th',
         headerToolbar: {
-          left: 'prev,next',
-          center: 'title',
-          right: ''
+          left: '',            // เอาปุ่มออกจากซ้าย
+          center: 'title',     // ตรงกลางเป็นชื่อเดือน
+          right: 'prev,next'   // ปุ่มไปทางขวา
         },
         events: [
           {
