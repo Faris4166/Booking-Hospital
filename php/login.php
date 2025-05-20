@@ -23,7 +23,7 @@
     </button>
 
     <p class="mt-4 text-center text-sm">
-      ยังไม่มีบัญชี? <a href="register.html" class="text-blue-600 underline">สมัครสมาชิก</a>
+      ยังไม่มีบัญชี? <a href="register.php" class="text-blue-600 underline">สมัครสมาชิก</a>
     </p>
   </form>
 
