@@ -8,6 +8,7 @@
 <body>
   
   <h1>Hello faris login</h1>
+  <img src="1.jpg" alt="">
 
 </body>
 </html>
