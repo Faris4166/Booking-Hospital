@@ -7,6 +7,8 @@
 
   <!-- ฟอนต์ Kanit จาก Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="font.css"
+
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
