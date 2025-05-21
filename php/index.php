@@ -6,7 +6,6 @@
   <title>ปฏิทินด้วย Day.js</title>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="icon" href="../image/logo.ico">
 
   <style>
     #calendarDays > div {
@@ -74,8 +73,8 @@
     }
   </style>
 </head>
-<body class="bg-white min-h-screen flex items-center justify-center p-4 ">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-full -mt->
+<body class="bg-white min-h-screen flex items-center justify-center p-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl">
     
     <div class="w-full">
       <div id="calendar" class="border rounded-lg shadow p-4">
@@ -83,7 +82,7 @@
           <button id="prevBtn" class="text-[#31a35f] text-xl">&lt;</button>
           <h2 id="monthYear" class="text-[#31a35f] font-semibold text-lg"></h2>
           <button id="nextBtn" class="text-[#31a35f] text-xl">&gt;</button>
-        </div> 
+        </div>
         
         <div class="grid grid-cols-7 text-center mt-4 text-gray-500 font-medium">
           <div>อา</div><div>จ</div><div>อ</div><div>พ</div><div>พฤ</div><div>ศ</div><div>ส</div>
@@ -123,7 +122,7 @@
       const endOfPrevMonth = prevMonth.endOf('month');
       const totalPrevDays = endOfPrevMonth.date();
 
-      const totalCells = 3;
+      const totalCells = 42;
 
       const monthName = thaiMonths[currentDate.month()];
       monthYear.textContent = `${monthName} ${currentDate.year()}`;
