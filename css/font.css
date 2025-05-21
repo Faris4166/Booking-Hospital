@@ -2,11 +2,9 @@
 
 body {
     font-family: 'Kanit', sans-serif;
-    font-weight: 400; /* ค่ามาตรฐาน: 100 ถึง 900 */
-    font-style: normal; /* หรือ italic */
+    font-weight: 400;
+    font-style: normal;
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.5px;
-    color: #333; /* ตัวอย่างสีข้อความ */
-  }
-  
+}
