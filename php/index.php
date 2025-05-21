@@ -6,6 +6,7 @@
   <title>ปฏิทินด้วย Day.js</title>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="../image/logo.ico">
 
   <style>
     #calendarDays > div {
