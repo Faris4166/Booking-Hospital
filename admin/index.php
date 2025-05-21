@@ -37,10 +37,6 @@ $current_date = date("d/m/Y");
 $current_time = date("H:i:s");
 ?>
 
-<style>
-
-</style>
-
 <div class="container-fluid mt-4">
     <div class="row">
         <!-- ผู้เข้าชมสัปดาห์นี้ -->
