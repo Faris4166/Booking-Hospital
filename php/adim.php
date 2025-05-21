@@ -7,6 +7,5 @@
       <link rel="icon" href="../image/logo.ico">
 </head>
 <body>
-    
-</body>
+    </body>
 </html>
