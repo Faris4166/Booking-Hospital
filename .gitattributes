@@ -1,3 +1,3 @@
 # Auto detect text files and perform LF normalization
-*.php linguist-language=C#
+*.php linguist-language=php
 * text=auto
