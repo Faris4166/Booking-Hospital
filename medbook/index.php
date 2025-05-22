@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MedBook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ปฏิทินด้วย Day.js</title>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="../image/logo.ico">
 
   <style>
-    #calendarDays>div {
+    #calendarDays > div {
       height: 65px;
       min-height: 65px;
       display: flex;
@@ -23,34 +23,34 @@
     }
 
     /* hover สำหรับวันเดือนนี้ที่เลือกได้ */
-    #calendarDays>div.current-month:hover:not(.past-day) {
+    #calendarDays > div.current-month:hover:not(.past-day) {
       border-color: #339e61;
       color: #339e61;
       cursor: pointer;
     }
 
     /* hover สำหรับวันปัจจุบัน */
-    #calendarDays>div.today:hover {
+    #calendarDays > div.today:hover {
       border-color: #2c8050;
       color: #2c8050;
       cursor: pointer;
     }
 
     /* วันเดือนอื่นสีเทา */
-    #calendarDays>div.other-month:not(.past-day) {
+    #calendarDays > div.other-month:not(.past-day) {
       color: #a0aec0;
       cursor: default;
     }
 
     /* วันเดือนอื่นที่เป็นวันก่อนวันนี้ */
-    #calendarDays>div.other-month.past-day {
+    #calendarDays > div.other-month.past-day {
       color: #9ca3af;
       cursor: not-allowed;
       opacity: 0.6;
     }
 
     /* วันปัจจุบัน */
-    #calendarDays>div.today {
+    #calendarDays > div.today {
       color: #32a060;
       border-color: #32a060;
       background-color: white;
@@ -59,15 +59,14 @@
     }
 
     /* วันก่อนวันนี้ */
-    #calendarDays>div.past-day {
-      color: #9ca3af;
-      /* สีเทาอ่อน */
+    #calendarDays > div.past-day {
+      color: #9ca3af; /* สีเทาอ่อน */
       cursor: not-allowed;
       opacity: 0.6;
     }
 
     /* วันที่เลือก */
-    #calendarDays>div.selected {
+    #calendarDays > div.selected {
       background-color: #d1fae5;
       border-color: #32a060;
       color: #32a060;
@@ -75,10 +74,9 @@
     }
   </style>
 </head>
-
 <body class="bg-white min-h-screen flex items-center justify-center p-4">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl">
-
+    
     <div class="w-full">
       <div id="calendar" class="border rounded-lg shadow p-4">
         <div class="flex items-center justify-between bg-[#f0f7f2] p-3 rounded">
@@ -86,41 +84,16 @@
           <h2 id="monthYear" class="text-[#31a35f] font-semibold text-lg"></h2>
           <button id="nextBtn" class="text-[#31a35f] text-xl">&gt;</button>
         </div>
-
+        
         <div class="grid grid-cols-7 text-center mt-4 text-gray-500 font-medium">
-          <div>อา</div>
-          <div>จ</div>
-          <div>อ</div>
-          <div>พ</div>
-          <div>พฤ</div>
-          <div>ศ</div>
-          <div>ส</div>
+          <div>อา</div><div>จ</div><div>อ</div><div>พ</div><div>พฤ</div><div>ศ</div><div>ส</div>
         </div>
 
         <div id="calendarDays" class="grid grid-cols-7 text-center mt-2 gap-1"></div>
       </div>
     </div>
 
-    <div class="w-full">
-      <div class="border rounded-lg shadow p-4 h-full flex flex-col relative">
-        <div class="bg-[#f0f7f2] p-3 rounded">
-          <h2 class="text-[#31a35f] font-semibold text-lg">การจองใช้งานห้องเรียน</h2>
-        </div>
-
-        <!-- เนื้อหาหลัก -->
-        <div class="flex-1 flex items-center justify-center text-gray-400 italic">
-          ยังไม่มีข้อมูลการจอง
-        </div>
-
-        <!-- ปุ่มเพิ่มการจอง -->
-        <button
-          class="absolute bottom-4 right-4 bg-[#31a35f] text-black rounded-full w-12 h-12 shadow-md hover:bg-[#279151] transition duration-200 text-2xl flex items-center justify-center"
-          title="เพิ่มการจอง">
-          +
-        </button>
-      </div>
-    </div>
-
+    <div class="w-full min-h-[400px] border border-dashed border-gray-300 rounded-lg"></div>
   </div>
 
   <script>
@@ -143,7 +116,7 @@
       const today = dayjs().startOf('day');
       const startOfMonth = currentDate.startOf("month");
       const endOfMonth = currentDate.endOf("month");
-      const startDay = startOfMonth.day();
+      const startDay = startOfMonth.day(); 
       const totalDays = endOfMonth.date();
 
       const prevMonth = currentDate.subtract(1, 'month');
@@ -258,5 +231,4 @@
     renderCalendar();
   </script>
 </body>
-
 </html>
