@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>เข้าสู่ระบบ</title>
+  <title>MedBook</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../css/font.css">
     <link rel="icon" href="../image/logo.ico">
