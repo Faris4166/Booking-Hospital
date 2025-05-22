@@ -1,6 +1,3 @@
-<?php
-// header.php
-?>
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -62,4 +59,3 @@
 </header>
 <div class="container">
 <nav>
-
