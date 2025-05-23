@@ -138,7 +138,7 @@
     <div class="w-full">
       <div class="border rounded-lg shadow p-4 h-full flex flex-col relative">
         <div class="bg-[#f0f7f2] p-3 rounded">
-          <h2 class="text-[#31a35f] font-semibold text-lg">ปการจองใช้งานห้องเรียน</h2>
+          <h2 class="text-[#31a35f] font-semibold text-lg">การจองใช้งานห้องเรียน</h2>
         </div>
 
           <!-- เนื้อหา -->
