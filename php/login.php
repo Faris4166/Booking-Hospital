@@ -12,11 +12,11 @@ include('../database/db.php');
     <link rel="icon" href="../image/logo.ico">
 
 </head>
-<body class="min-h-screen flex items-center justify-center bg-gray-100 px-4 ">
+<body class="min-h-screen flex items-center justify-center bg-gray-100 px-4">
   <div class="w-full max-w-5xl bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row transition-all duration-300 my-4">
     
     <div class="w-full md:w-1/2 h-[40vh] md:h-auto">
-      <img src="../Image/1.jpg"
+      <img src="https://images.pexels.com/photos/12585206/pexels-photo-12585206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
            alt="Login Image"
            class="h-full w-full object-cover"/>
     </div>
@@ -27,13 +27,13 @@ include('../database/db.php');
 
         <form action="login_process.php" method="POST" class="space-y-5">
           <div>
-            <label for="username" class="block text-gray-700 font-medium">ชื่อผู้ใช้</label>
+            <label for="email" class="block text-gray-700 font-medium">ชื่ออีเมล</label>
             <input
               type="text"
-              id="username"
-              name="username"
+              id="email"
+              name="email"
               required
-              placeholder="กรอกชื่อผู้ใช้ของคุณ"
+              placeholder="กรอกชื่ออีเมลของคุณ"
               class="w-full px-4 py-2 mt-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </div>

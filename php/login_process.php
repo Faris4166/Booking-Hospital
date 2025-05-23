@@ -3,12 +3,12 @@ session_start();
 include('../database/db.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST['username'];
+    $email = $_POST['email'];
     $password = $_POST['password'];
 
     // ใช้ prepared statement ปลอดภัยจาก SQL injection
-    $stmt = $conn->prepare("SELECT * FROM user_tb WHERE username = ?");
-    $stmt->bind_param("s", $username);
+    $stmt = $conn->prepare("SELECT * FROM user_tb WHERE email = ?");
+    $stmt->bind_param("s", $email);
     $stmt->execute();
     $result = $stmt->get_result();
 
@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($password === $row['password']) {
             $_SESSION['user_id'] = $row['user_id'];
-            $_SESSION['username'] = $row['username'];
+            $_SESSION['email'] = $row['email'];
             $_SESSION['role'] = $row['role'];
             header("Location: dashboard.php");
             exit();
