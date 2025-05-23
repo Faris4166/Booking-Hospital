@@ -15,11 +15,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result && $result->num_rows === 1) {
         $row = $result->fetch_assoc();
 
-        if ($password === $row['password']) {
+       if (password_verify($password, $row['password'])) {
             $_SESSION['user_id'] = $row['user_id'];
             $_SESSION['email'] = $row['email'];
             $_SESSION['role'] = $row['role'];
-            header("Location: dashboard.php");
+            header("Location: index.php");
             exit();
         } else {
             // รหัสผ่านผิด
