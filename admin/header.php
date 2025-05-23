@@ -36,8 +36,8 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-2 sidebar">
-        <a href="dashboard.php?page=visitors"><i class="bi bi-eye"></i> ผู้เข้าชม</a>
-        <a href="dashboard.php?page=rooms"><i class="bi bi-door-open"></i> จองห้อง</a>
-        <a href="dashboard.php?page=users"><i class="bi bi-people"></i> ผู้ใช้</a>
+        <a href="dashboard.php?page=visitors"><i class="bi bi-eye"></i> รายละเอียดเว็บไซต์</a>
+        <a href="dashboard.php?page=rooms"><i class="bi bi-door-open"></i> แก้ไขข้อมูลการจองห้อง</a>
+        <a href="dashboard.php?page=users"><i class="bi bi-people"></i> จำนวนผู้ใช้ในระบบ</a>
       </div>
       <div class="col-md-10 p-4">
