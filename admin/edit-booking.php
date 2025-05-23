@@ -17,6 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id'])) {
 }
 ?>
 
+<link rel="stylesheet" href="font.css">
+
 <h2>แก้ไขตารางการจองห้อง</h2>
 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 700px;">
