@@ -120,6 +120,7 @@
         </div>
       </div>
 
+<<<<<<< HEAD
       <!-- ข้อมูลการจอง -->
       <div class="w-full">
         <div class="border rounded-lg shadow p-4 h-full flex flex-col relative">
@@ -127,6 +128,17 @@
             <h2 class="text-[#31a35f] font-semibold text-lg">การจองใช้งานห้องเรียน</h2>
           </div>
           <div class="flex-1 flex items-center justify-center text-gray-400 italic text-sm sm:text-base text-center px-2">
+=======
+    <div class="w-full">
+      <div class="border rounded-lg shadow p-4 h-full flex flex-col relative">
+        <div class="bg-[#f0f7f2] p-3 rounded">
+          <h2 class="text-[#31a35f] font-semibold text-lg">การจองใช้งานห้องเรียน</h2>
+        </div>
+
+          <!-- เนื้อหา -->
+          <div
+            class="flex-1 flex items-center justify-center text-gray-400 italic text-sm sm:text-base text-center px-2">
+>>>>>>> 1f4a86fd0097f6a1799a88aa784547ad216a02ec
             ยังไม่มีข้อมูลการจอง
           </div>
           <button

@@ -1,61 +1,43 @@
+<?php // header.php ?>
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Dashboard - เว็บไซต์ทางการแพทย์</title>
-    <!-- ฟอนต์ Kanit จาก Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet" />
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Kanit', sans-serif;
-            background-color: #f9fdf9;
-            color: #033d12;
-        }
-        header {
-            background-color: #2e7d32; /* เขียวเข้ม */
-            color: white;
-            padding: 15px 20px;
-            font-size: 24px;
-            font-weight: 600;
-        }
-        .container {
-            display: flex;
-            height: calc(100vh - 60px);
-        }
-        nav {
-            width: 220px;
-            background-color: #a5d6a7; /* เขียวอ่อน */
-            padding-top: 20px;
-            box-sizing: border-box;
-        }
-        nav a {
-            display: block;
-            padding: 12px 20px;
-            color: #033d12;
-            text-decoration: none;
-            font-weight: 500;
-            border-left: 4px solid transparent;
-            transition: background-color 0.3s, border-left-color 0.3s;
-        }
-        nav a:hover, nav a.active {
-            background-color: #81c784;
-            border-left-color: #2e7d32;
-            color: #1b5e20;
-        }
-        main {
-            flex-grow: 1;
-            background-color: white;
-            padding: 30px;
-            box-sizing: border-box;
-            overflow-y: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>แดชบอร์ดผู้ดูแล</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Kanit', sans-serif; background: #f9f9f9; }
+    .navbar { background-color: #2e7d32; }
+    .navbar-brand { color: #fff; }
+    .sidebar {
+        height: 100vh;
+        background-color: #43a047;
+        padding: 0;
+    }
+    .sidebar a {
+        display: block;
+        color: white;
+        padding: 12px 20px;
+        text-decoration: none;
+    }
+    .sidebar a:hover {
+        background-color: #66bb6a;
+    }
+  </style>
 </head>
 <body>
-<header>
-    เว็บไซต์ทางการแพทย์ - แดชบอร์ดแก้ไขหลังบ้าน
-</header>
-<div class="container">
-<nav>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <span class="navbar-brand">MEC Dashboard</span>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2 sidebar">
+        <a href="dashboard.php?page=visitors"><i class="bi bi-eye"></i> ผู้เข้าชม</a>
+        <a href="dashboard.php?page=rooms"><i class="bi bi-door-open"></i> จองห้อง</a>
+        <a href="dashboard.php?page=users"><i class="bi bi-people"></i> ผู้ใช้</a>
+      </div>
+      <div class="col-md-10 p-4">
