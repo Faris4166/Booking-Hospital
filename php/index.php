@@ -87,6 +87,7 @@
         <div x-show="open" x-transition @click.outside="open = false"
           class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg z-50" style="display: none;">
           <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 no-underline hover:no-underline">⚙ ตั้งค่า</a>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 no-underline hover:no-underline">📢 ติดต่อแจ้งหน้าที่</a>
           <form action="logout.php" method="POST">
             <button type="submit" class="w-full text-left px-4 py-2 text-red-600 hover:bg-gray-100">🚪 ลงชื่อออก</button>
           </form>
@@ -123,7 +124,7 @@
       <div class="w-full">
         <div class="border rounded-lg shadow p-4 h-full flex flex-col relative">
           <div class="bg-[#f0f7f2] p-3 rounded">
-            <h2 class="text-[#31a35f] font-semibold text-lg">ปการจองใช้งานห้องเรียน</h2>
+            <h2 class="text-[#31a35f] font-semibold text-lg">การจองใช้งานห้องเรียน</h2>
           </div>
           <div class="flex-1 flex items-center justify-center text-gray-400 italic text-sm sm:text-base text-center px-2">
             ยังไม่มีข้อมูลการจอง
