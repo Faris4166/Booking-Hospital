@@ -157,6 +157,7 @@ $emailError = isset($_GET['email_error']);
 
     password.addEventListener("input", validatePassword);
     confirmPassword.addEventListener("input", validatePassword);
+    
   </script>
 </body>
 </html>
