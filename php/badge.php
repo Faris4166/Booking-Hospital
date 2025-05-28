@@ -4,13 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Badge Example</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script> 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">      
 </head>
 <body class="flex gap-4 p-10 flex-wrap">
-
+<style>
+    body{
+    font-family: 'Kanit', sans-serif;
+    }
+</style>
   <!-- Red Badge -->
   <button class="flex items-center gap-2 border border-gray-300 px-3 py-1 rounded-md text-sm">
-    <span class="w-2 h-2 rounded-full bg-red-500"></span> Badge
+    <span class="w-2 h-2 rounded-full bg-red-500"></span> ห้อง Sim 1 ชั้น 1
   </button>
 
   <!-- Yellow Badge -->
