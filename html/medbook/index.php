@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="../css/font.css">
 
   <style>
-    #calendarDays > div {
+    #calendarDays>div {
       height: 65px;
       min-height: 65px;
       display: flex;
@@ -29,30 +29,30 @@
       background-color: white;
     }
 
-    #calendarDays > div.current-month:hover:not(.past-day) {
+    #calendarDays>div.current-month:hover:not(.past-day) {
       border-color: #339e61;
       color: #339e61;
       cursor: pointer;
     }
 
-    #calendarDays > div.today:hover {
+    #calendarDays>div.today:hover {
       border-color: #2c8050;
       color: #2c8050;
       cursor: pointer;
     }
 
-    #calendarDays > div.other-month:not(.past-day) {
+    #calendarDays>div.other-month:not(.past-day) {
       color: #a0aec0;
       cursor: default;
     }
 
-    #calendarDays > div.other-month.past-day {
+    #calendarDays>div.other-month.past-day {
       color: #9ca3af;
       cursor: not-allowed;
       opacity: 0.6;
     }
 
-    #calendarDays > div.today {
+    #calendarDays>div.today {
       color: #32a060;
       border-color: #32a060;
       background-color: white;
@@ -60,13 +60,13 @@
       cursor: pointer;
     }
 
-    #calendarDays > div.past-day {
+    #calendarDays>div.past-day {
       color: #9ca3af;
       cursor: not-allowed;
       opacity: 0.6;
     }
 
-    #calendarDays > div.selected {
+    #calendarDays>div.selected {
       background-color: #d1fae5;
       border-color: #32a060;
       color: #32a060;
@@ -81,16 +81,23 @@
   <nav class="bg-white shadow px-4 py-3">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
       <div class="text-xl font-bold text-indigo-600">Med Book</div>
+
       <div class="relative" x-data="{ open: false }">
         <button @click="open = !open" class="focus:outline-none">
           <img src="../image/1.jpg" class="w-10 h-10 rounded-full border-2 border-indigo-600">
         </button>
+
         <div x-show="open" x-transition @click.outside="open = false"
           class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg z-50" style="display: none;">
-          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">⚙ ตั้งค่า</a>
-          <form action="logout.php" method="POST">
+          <a href="../php/" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 no-underline hover:no-underline">
+            ลงชื่อ/สมัครสมาชิก</a>
+          <a href="../php/login.php" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 no-underline hover:no-underline">
+            ตั้งค่า</a>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 no-underline hover:no-underline">
+            แจ้งแจ้งหน้าที่</a>
+          <form action="../php/logout.php" method="POST">
             <button type="submit" class="w-full text-left px-4 py-2 text-red-600 hover:bg-gray-100">
-              🚪 ลงชื่อออก
+               ลงชื่อออก
             </button>
           </form>
         </div>
@@ -112,7 +119,13 @@
           </div>
 
           <div class="grid grid-cols-7 text-center mt-4 text-gray-500 font-medium text-sm sm:text-base">
-            <div>อา</div><div>จ</div><div>อ</div><div>พ</div><div>พฤ</div><div>ศ</div><div>ส</div>
+            <div>อา</div>
+            <div>จ</div>
+            <div>อ</div>
+            <div>พ</div>
+            <div>พฤ</div>
+            <div>ศ</div>
+            <div>ส</div>
           </div>
 
           <div id="calendarDays" class="grid grid-cols-7 text-center mt-2 gap-1 text-sm sm:text-base"></div>
@@ -125,7 +138,8 @@
           <div class="bg-[#f0f7f2] p-3 rounded">
             <h2 class="text-[#31a35f] font-semibold text-lg">จองใช้งานห้องเรียน</h2>
           </div>
-          <div class="flex-1 flex items-center justify-center text-gray-400 italic text-sm sm:text-base text-center px-2">
+          <div
+            class="flex-1 flex items-center justify-center text-gray-400 italic text-sm sm:text-base text-center px-2">
             ยังไม่มีข้อมูลการจอง
           </div>
           <button
