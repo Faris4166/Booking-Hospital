@@ -8,10 +8,8 @@ include_once 'header.php';
 // โหลด component สำหรับแสดงสถิติ
 include_once __DIR__ . '/components/site_statistics.php';
 
-// ตรวจสอบและสร้างตารางที่จำเป็น (visitors, sessions, page_views)
 createNecessaryTables($db);
 
-// เตรียมข้อมูลสถิติสำหรับแสดงบน Dashboard
 $stats               = new SiteStatistics($db);
 $weekly_visitors     = $stats->getWeeklyVisitors();
 $last_week_visitors  = $stats->getLastWeekVisitors();
@@ -27,7 +25,6 @@ $weekly_change_icon  = $weekly_change >= 0 ? 'bi-arrow-up-short' : 'bi-arrow-dow
 $weekly_change_text  = $weekly_change >= 0 ? 'เพิ่มขึ้น' : 'ลดลง';
 $weekly_change_abs   = abs($weekly_change);
 
-// เปอร์เซ็นต์สมมติสำหรับเวลาเฉลี่ยต่อเซสชัน (ปรับดึงจริงได้ตามต้องการ)
 $session_change        = 12;
 $session_change_icon   = $session_change >= 0 ? 'bi-arrow-up-short' : 'bi-arrow-down-short';
 $session_change_text   = $session_change >= 0 ? 'เพิ่มขึ้น' : 'ลดลง';
@@ -39,7 +36,6 @@ $current_time = date("H:i:s");
 
 <div class="container-fluid mt-4">
     <div class="row">
-        <!-- ผู้เข้าชมสัปดาห์นี้ -->
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card stat-card bg-gradient-success h-100">
                 <div class="card-body">

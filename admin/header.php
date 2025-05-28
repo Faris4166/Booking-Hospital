@@ -19,7 +19,7 @@
     .sidebar a {
         display: block;
         color: white;
-        padding: 12px 20px;
+        padding: 15px 15px;
         text-decoration: none;
     }
     .sidebar a:hover {
