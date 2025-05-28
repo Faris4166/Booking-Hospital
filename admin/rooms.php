@@ -44,6 +44,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id'])) {
                     <td><input type="text" name="time" value="<?php echo $booking['time']; ?>" required /></td>
                     <td><input type="text" name="patient" value="<?php echo htmlspecialchars($booking['patient']); ?>" required /></td>
                     <td><button type="submit">บันทึก</button></td>
+                    <td><button type="submit">แก้ไข</button></td>
+                    <td><button type="submit">ลบ</button></td>
                 </form>
             </tr>
         <?php endforeach; ?>
