@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>MedBook</title>
+  <title>ฟอร์มจองห้องพัก (พร้อมเลือกวันและช่วงเวลา)</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../css/font.css">
   <link rel="icon" href="../image/logo.ico">
