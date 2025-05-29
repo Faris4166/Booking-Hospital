@@ -56,7 +56,7 @@
   <div class="bg-white w-full max-w-2xl rounded-3xl shadow-xl p-8 space-y-4 border relative"
        style="max-height: 80vh; overflow-y: auto;">
     <button onclick="closeModal()" class="absolute top-2 right-4 text-gray-500 text-3xl font-bold">&times;</button>
-    <h1 class="text-2xl font-bold text-indigo-700 text-center">ฟอร์มจองห้องเรียน</h1>
+    <h1 class="text-2xl font-bold text-black text-center">ฟอร์มจองห้องเรียน</h1>
     <div>
       <label class="block text-gray-700 font-medium mb-1">ชื่อ - นามสกุล</label>
       <input type="text" class="w-full border rounded-xl px-4 py-2 focus:outline-none" placeholder="กรอกชื่อ-นามสกุล" />
@@ -93,7 +93,7 @@
       </select>
     </div>
     <div class="text-center">
-      <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-2 rounded-xl transition">ส่งคำขอจอง</button>
+      <button class="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-xl transition">ส่งคำขอจอง</button>
     </div>
   </div>
 </div>
