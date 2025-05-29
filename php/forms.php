@@ -20,6 +20,28 @@
     <h2 class="text-xl sm:text-2xl font-bold mb-6 text-center text-blue-600">ฟอร์มจองห้องพัก</h2>
     <form action="#" method="POST" class="space-y-4">
 
+    <!-- ชื่อ-ห้อง -->
+      <div>
+        <label for="roomName" class="block text-sm font-medium text-gray-700">ชื่อห้อง</label>
+        <input type="text" id="roomName" name="roomName" required
+          class="mt-1 block w-full max-w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+
+    <!-- หัวข้อ -->
+      <div>
+        <label for="topic" class="block text-sm font-medium text-gray-700">หัวข้อการใช้งาน</label>
+        <input type="text" id="topic" name="topic" required
+          class="mt-1 block w-full max-w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+
+      
+      <!-- จำนวนผู้เข้าร่วม -->
+      <div>
+        <label for="attendees" class="block text-sm font-medium text-gray-700">จำนวนผู้เข้าร่วม</label>
+        <input type="number" id="attendees" name="attendees" min="1" required
+               class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+
       <!-- ชื่อ-นามสกุล -->
       <div>
         <label for="fullName" class="block text-sm font-medium text-gray-700">ชื่อ-นามสกุล</label>
@@ -34,12 +56,13 @@
           class="mt-1 block w-full max-w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
       </div>
 
-      <!-- หัวข้อ -->
+      <!-- ใช้สำหรับ -->
       <div>
-        <label for="text" class="block text-sm font-medium text-gray-700">หัวข้อ</label>
-        <input type="text" id="text" name="text" required
+        <label for="use" class="block text-sm font-medium text-gray-700">ใช้สำหรับ</label>
+        <input type="use" id="text" name="use " required
           class="mt-1 block w-full max-w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
       </div>
+      
 
       <!-- ✅ ช่วงวันที่ -->
       <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
