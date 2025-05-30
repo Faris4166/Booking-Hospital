@@ -10,10 +10,8 @@
   <link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/font.css">
   <style>
-    body {
-      font-family: 'Kanit', sans-serif;
-    }
     /* ซ่อน scrollbar */
     div::-webkit-scrollbar {
       display: none;
@@ -113,7 +111,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label for="startTime" class="block text-sm font-medium text-gray-700">เวลาเริ่ม</label>
-            <input type="text" id="startTime" name="startTime" required
+            <input type="" id="startTime" name="startTime" required
               class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
           </div>
           <div>
