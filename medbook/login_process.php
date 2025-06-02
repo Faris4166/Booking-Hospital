@@ -17,8 +17,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (password_verify($password, $row['password'])) {
             $_SESSION['user_id'] = $row['user_id'];
-            $_SESSION['email'] = $row['email'];
+            $_SESSION['user_email'] = $row['email'];   
+            $_SESSION['user_name'] = $row['username']; 
             $_SESSION['role'] = $row['role'];
+
             header("Location: login.php?success=1");
             exit();
         } else {
@@ -35,3 +37,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: login.php");
     exit();
 }
+?>

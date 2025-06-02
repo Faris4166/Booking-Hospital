@@ -65,44 +65,44 @@
 
 
 
-  <?php if (isset($_GET['error']) || isset($_GET['success'])): ?>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        <?php if (isset($_GET['error'])): ?>
-          let error = "<?php echo htmlspecialchars($_GET['error']); ?>";
-          let title = 'เกิดข้อผิดพลาด';
-          let text = '';
+<?php if (isset($_GET['error']) || isset($_GET['success'])): ?>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    <?php if (isset($_GET['error'])): ?>
+      let error = "<?php echo htmlspecialchars($_GET['error']); ?>";
+      let title = 'เกิดข้อผิดพลาด';
+      let text = '';
 
-          if (error === 'invalid_password') {
-            text = 'รหัสผ่านไม่ถูกต้อง กรุณาลองใหม่อีกครั้ง';
-          } else if (error === 'user_not_found') {
-            text = 'ไม่พบผู้ใช้งาน กรุณาตรวจสอบอีเมลอีกครั้ง';
-          } else {
-            text = 'เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง';
-          }
+      if (error === 'invalid_password') {
+        text = 'รหัสผ่านไม่ถูกต้อง กรุณาลองใหม่อีกครั้ง';
+      } else if (error === 'user_not_found') {
+        text = 'ไม่พบผู้ใช้งาน กรุณาตรวจสอบอีเมลอีกครั้ง';
+      } else {
+        text = 'เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง';
+      }
 
-          Swal.fire({
-            icon: 'error',
-            title: title,
-            text: text,
-            confirmButtonText: 'ตกลง',
-            confirmButtonColor: '#2664eb'
-          });
-        <?php elseif (isset($_GET['success'])): ?>
-          Swal.fire({
-            icon: 'success',
-            title: 'เข้าสู่ระบบสำเร็จ',
-            text: 'กำลังพาคุณไปยังหน้าหลัก...',
-            timer: 2000,
-            timerProgressBar: true,
-            showConfirmButton: false
-          }).then(() => {
-            window.location.href = 'index.php';
-          });
-        <?php endif; ?>
+      Swal.fire({
+        icon: 'error',
+        title: title,
+        text: text,
+        confirmButtonText: 'ตกลง',
+        confirmButtonColor: '#2664eb'
       });
-    </script>
-  <?php endif; ?>
+    <?php elseif (isset($_GET['success'])): ?>
+      Swal.fire({
+        icon: 'success',
+        title: 'เข้าสู่ระบบสำเร็จ',
+        text: 'กำลังพาคุณไปยังหน้าหลัก...',
+        timer: 2000,
+        timerProgressBar: true,
+        showConfirmButton: false
+      }).then(() => {
+        window.location.href = 'index.php';
+      });
+    <?php endif; ?>
+  });
+</script>
+<?php endif; ?>
 
 </body>
 
