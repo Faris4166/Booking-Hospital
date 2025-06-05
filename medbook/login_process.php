@@ -15,11 +15,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result && $result->num_rows === 1) {
         $row = $result->fetch_assoc();
 
-       if (password_verify($password, $row['password'])) {
+        if (password_verify($password, $row['password'])) {
             $_SESSION['user_id'] = $row['user_id'];
-            $_SESSION['email'] = $row['email'];
+            $_SESSION['user_email'] = $row['email'];   
+            $_SESSION['user_name'] = $row['username']; 
             $_SESSION['role'] = $row['role'];
-            header("Location: index.php");
+
+            header("Location: login.php?success=1");
             exit();
         } else {
             // รหัสผ่านผิด
