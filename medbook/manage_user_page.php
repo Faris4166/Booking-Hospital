@@ -280,14 +280,14 @@
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username</label>
                                 <input type="username" name="username" id="username"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                    placeholder="Type product name" required="">
+                                    placeholder="" required="">
                             </div>
                             <div>
                                 <label for="LINE ID	"
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">LINE ID</label>
                                 <input type="text" name="LINE ID" id="LINE ID"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                    placeholder="Product brand" required="">
+                                    placeholder="" required="">
                             </div>
                             <div>
                                 <label for="password "
@@ -311,14 +311,33 @@
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                     placeholder="" required="">
                             </div>
-                            <div><label for="category"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label><select
+                            <div>
+                                <label for="email"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">email
+                                </label>
+                                <input type="email" name="email" id="email"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                    placeholder="" required="">
+                            </div>
+                            <div>
+                                <label for="category"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Role</label><select
                                     id="category"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
                                     <option>ครู</option>
                                     <option>นักเรียน</option>
                                     <option>ผู้ดูแล</option>
-                                </select></div>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="category"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Verification</label><select
+                                    id="category"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                    <option>ไม่ยืนยันบัญชี</option>
+                                    <option>ยืนยันบัญชีแล้ว</option>
+                                </select>
+                            </div>
                             <div class="sm:col-span-2"><label for="description"
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label><textarea
                                     id="description" rows="4"
