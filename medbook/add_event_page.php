@@ -116,3 +116,4 @@
 
   renderCalendar();
 </script>
+</div>
