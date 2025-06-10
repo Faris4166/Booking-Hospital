@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 <?php include 'navbar.php'; ?>
-<link rel="stylesheet" href="../css/font.css">
+
 <div class="p-4 sm:ml-64 sm:p-10">
   <div class="text-gray-800">
     <div class="w-full max-w-3xl mx-auto mt-4 sm:mt-6 p-4 sm:p-6 border border-gray-200 rounded-xl shadow-lg bg-gray-50">
