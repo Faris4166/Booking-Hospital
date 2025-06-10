@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md w-full max-w-xl mx-auto mt-8">
+  <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md w-full max-w-xl mx-auto mt-8 ">
     <h2 class="text-xl sm:text-2xl font-bold mb-6 text-center text-blue-600">ฟอร์มจองห้องพัก</h2>
     <form action="#" method="POST" class="space-y-4">
 
