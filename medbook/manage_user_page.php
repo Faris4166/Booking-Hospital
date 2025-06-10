@@ -98,6 +98,7 @@ $result = $conn->query($sql);
                     <select name="role" id="role" required class="border p-2 rounded w-full">
                         <option value="">-- บทบาท --</option>
                         <option value="admin">แอดมิน</option>
+                        <option value="academic">นักวิชาการ</option>
                         <option value="user">ผู้ใช้</option>
                     </select>
                     <select name="is_verified" id="is_verified" required class="border p-2 rounded w-full">
