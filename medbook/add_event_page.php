@@ -30,7 +30,7 @@
   </style>
 </head>
 
-<body class="bg-gray-50">
+<body class="bg-gray-51">
 
   <!-- ส่วน container ปรับให้ responsive -->
 <div class="mt-20 p-4 sm:ml-64 sm:p-10 max-w-7xl mx-auto">
