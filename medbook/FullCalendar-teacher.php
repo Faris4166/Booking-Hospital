@@ -48,7 +48,7 @@
 
 <body class="bg-gray-50">
 
-  <div class="p-4 sm:ml-64 sm:p-10 max-w-7xl mx-auto">
+  <div class=" max-w-7xl mx-auto">
     <div id="calendar"></div>
   </div>
 

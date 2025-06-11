@@ -48,7 +48,7 @@
 
 <body class="bg-gray-50">
 
-  <div class="p-4 sm:ml-64 sm:p-10 max-w-7xl mx-auto">
+  <div class=" max-w-7xl mx-auto">
     <div id="calendar"></div>
   </div>
 
@@ -87,9 +87,8 @@
           // When a date is clicked: Show the modal and load content from forms.php
           modal.classList.remove('hidden'); // Make the modal visible
 
-          // Fetch content from forms.php, passing the clicked date as a query parameter
-          // Ensure the path to forms.php is correct relative to this HTML file
-          fetch(`forms.php?date=${info.dateStr}`)
+
+          fetch(`forms2.php?date=${info.dateStr}`)
             .then(response => {
               if (!response.ok) {
                 // Check for HTTP errors (e.g., 404, 500)
