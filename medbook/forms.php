@@ -56,13 +56,13 @@
       <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
         <div class="w-full">
           <label for="startDate" class="block text-sm font-medium text-gray-700">วันที่เริ่ม</label>
-          <input type="text" id="startDate" name="startDate" required
+          <input type="date" id="startDate" name="startDate" required
             class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="เลือกวันที่เริ่ม" />
         </div>
         <div class="w-full">
           <label for="endDate" class="block text-sm font-medium text-gray-700">วันที่สิ้นสุด</label>
-          <input type="text" id="endDate" name="endDate" required
+          <input type="date" id="endDate" name="endDate" required
             class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="เลือกวันที่สิ้นสุด" />
         </div>
@@ -71,12 +71,12 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label for="startTime" class="block text-sm font-medium text-gray-700">เวลาเริ่ม</label>
-          <input type="text" id="startTime" name="startTime" placeholder="เลือกเวลาเริ่ม" required
+          <input type="time" id="startTime" name="startTime" placeholder="เลือกเวลาเริ่ม" required
             class="mt-1 block w-full rounded-md border border-gray-300 p-2 focus:ring-2 focus:ring-indigo-500" />
         </div>
         <div>
           <label for="endTime" class="block text-sm font-medium text-gray-700">เวลาสิ้นสุด</label>
-          <input type="text" id="endTime" name="endTime" placeholder="เลือกเวลาสิ้นสุด" required
+          <input type="time" id="endTime" name="endTime" placeholder="เลือกเวลาสิ้นสุด" required
             class="mt-1 block w-full rounded-md border border-gray-300 p-2 focus:ring-2 focus:ring-indigo-500" />
         </div>
       </div>
